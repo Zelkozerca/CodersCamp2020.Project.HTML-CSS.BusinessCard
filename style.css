@@ -79,6 +79,7 @@ ul li a{
     border-radius: 50%;
     background-color: var(--details--);
     margin: 8px;
+    display: block;
 }
 .hobby-a{
     width: 200px;
@@ -88,8 +89,33 @@ ul li a{
     width: 150px;
     height: 150px;
 }
+.overlay{
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--primary--);
+    border-radius: 50%;
+}
+.overlay-text{
+    font-size: 20px;
+    position: relative;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.hobby:hover .overlay{
+    opacity: 1;
+}
 #skills{
     background-color: var(--primary--);
+}
+#skills img{
+    background-color: var(--details--);
+    padding: 8px;
+    margin-top: 16px;
+    border-radius: 10px;
 }
 #portfolio{
     background-color: var(--secondary--);
