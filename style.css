@@ -6,7 +6,7 @@
 
 body{
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 18px;
     color: var(--details--);
 }
 header{
@@ -35,24 +35,23 @@ ul li a{
     padding: 8px;
 }
 .menu-item{
-    width: 150px;
+    /* width: 150px;
     height: 150px;
     border-radius: 50%;
-    display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25); */
     margin: 8px;
 }
-.item-a{
+/* .item-a{
     background-color: var(--secondary--);
-}
+} */
 .item-a a{
     color: var(--details--);
 }
-.item-b{
+/* .item-b{
     background-color: var(--details--);
-}
+} */
 .item-b a{
     color: var(--secondary--);
 }
