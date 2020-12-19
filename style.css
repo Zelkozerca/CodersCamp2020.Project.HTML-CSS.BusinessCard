@@ -1,0 +1,109 @@
+:root{    
+    --primary--: #232323;
+    --secondary--: #FCB242;
+    --details--: #FFFFFF;
+}
+
+body{
+    font-family: Poppins;
+    font-size: 20px;
+    color: var(--details--);
+}
+header{
+    background-color: var(--primary--);
+}
+h1{
+    color: var(--details--);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 72px;
+}
+ul li{
+    list-style-type: none;
+    display: inline;
+}
+ul li a{
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.menu-item{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 8px;
+}
+.item-a{
+    background-color: var(--secondary--);
+}
+.item-a a{
+    color: var(--details--);
+}
+.item-b{
+    background-color: var(--details--);
+}
+.item-b a{
+    color: var(--secondary--);
+}
+.section-name{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 108px;
+}
+#about-me{
+    background-color: var(--secondary--);
+    color: var(--details--);
+}
+.avatar-photo{
+    width: 300px;
+    height: 300px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 50%;
+    margin: 24px;
+}
+#about-me a{
+    color: var(--details--);
+}
+.hobby{
+    border-radius: 50%;
+    background-color: var(--details--);
+    margin: 8px;
+}
+.hobby-a{
+    width: 200px;
+    height: 200px;
+}
+.hobby-b{
+    width: 150px;
+    height: 150px;
+}
+#skills{
+    background-color: var(--primary--);
+}
+#portfolio{
+    background-color: var(--secondary--);
+}
+#contact{
+    background-color: var(--primary--);
+}
+#contact .button-cta{
+    width: 100px;
+    height: 3em;
+    background-color: var(--secondary--);
+    color: var(--details--);
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
