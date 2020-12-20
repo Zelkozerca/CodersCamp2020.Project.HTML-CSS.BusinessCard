@@ -53,9 +53,9 @@
                    <b>Age:</b> 22 <br/>
                    <b>Profile:</b> UX Designer and Fullstack Developer <br/>
                    <img src="./photo/mdi_email.png"> zelekux@gmail.com <br/>
-                   <img src="./photo/mdi_local_phone.png"> 66 99 85 711 <br/>
+                   <img src="./photo/mdi_local_phone.png"> 66 99 85 712 <br/>
                    <img src="./photo/cib_github.png"> <a href="https://github.com/Zelkozerca">Zelkozerca</a><br/><br/>
-                   For 2 years I have been working and developing in the IT industry. I am a conscientious person determined to achieve my goals. 
+                   For 5 years I have been working and developing in the IT industry. I am a conscientious person determined to achieve my goals. 
                 </div>    
             </div>
         </div>
@@ -100,66 +100,103 @@
         <div class="container">
             <div class="section-name">Skills</div>
         </div>
-        <div class="container" style="justify-content: space-evenly;">
+        <div class="container" style="justify-content: space-evenly; align-items: flex-start;">
             <div class="container" style="flex-direction: column;">
-                <div>UX</div>
-                <div class="container">
-                    <div>
+                <div class="skill-category">UX</div>                
+                <div class="container" style="flex-direction: column;">
+                    <div class="container skill">
+                        <div class="container">Figma</div>
                         <img src="./photo/FIGMA.png">
-                        <div>Figma</div>
                     </div>
-                    <div>
+                    <div class="container skill">                
+                        <div class="container">Adobe XD</div>
                         <img src="./photo/XD.png">
-                        <div>Adobe XD</div>
                     </div>
-                    <div>
+                    <div class="container skill">                        
+                        <div class="container">Google analytics</div>
                         <img src="./photo/GA.png">
-                        <div>Google analytics</div>
                     </div>
-                    <div>
+                    <div class="container skill">                        
+                        <div class="container">Hot Jar</div>
                         <img src="./photo/HOTJAR.png">
-                        <div>Hot Jar</div>
                     </div>
                 </div>
             </div>
-            <div>
-                <div>FRONT-END</div>
+            <div class="container" style="flex-direction: column;">
+                <div class="skill-category">FRONT-END</div>
+                <div class="container" style="flex-direction: column;">
+                    <div class="container skill">
+                        <div class="container">HTML</div>
+                        <img src="./photo/HTML.png">
+                    </div>
+                    <div class="container skill">
+                        <div class="container">CSS</div>
+                        <img src="./photo/CSS.png">
+                    </div>
+                    <div class="container skill">
+                        <div class="container">JavaScript</div>
+                        <img src="./photo/JS.png">
+                    </div>
+                </div>
             </div>
-            <div>
-                <div>BACK-END</div>
+            <div class="container" style="flex-direction: column;">
+                <div class="skill-category">BACK-END</div>
+                <div class="container" style="flex-direction: column;">
+                    <div class="container skill">
+                        <div class="container">C#</div>
+                        <img src="./photo/csharp.png">
+                    </div>
+                    <div class="container skill">
+                        <div class="container">Python</div>
+                        <img src="./photo/PYTHON.png">
+                    </div>
+                    <div class="container skill">
+                        <div class="container">PHP</div>
+                        <img src="./photo/PHP.png">
+                    </div>
+                </div>
             </div>
         </div>
-
     </section>
+
+
 
     <section id="portfolio">
         <div class="container">
             <div class="section-name">Portfolio</div>
         </div>
-        <div class="container">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+            <div class="container">
+                <div class="portfolio-item">
+                    <div class="overlay-portfolio">
+                        <a href="https://maxibiuro.pl/"><img src="./photo/maxibiurobw.jpg" alt="maxibiuro"></a>
+                        <a class="overlay-portfolio-text" href="https://maxibiuro.pl/"><p>Home page and product card<br/>for Maxibiuro.pl</p></a>
+                    </div>                
+                </div>
+                <div class="portfolio-item">
+                    <div class="overlay-portfolio">
+                        <a href="https://www.figma.com/file/nRs6YPI498ZQzoafwzVRRl/Magazyn-studencki?node-id=7%3A215"><img src="./photo/Offtopic.jpg" alt="offtopic"></a>
+                        <a class="overlay-portfolio-text" href="https://www.figma.com/file/nRs6YPI498ZQzoafwzVRRl/Magazyn-studencki?node-id=7%3A215"><p>Web design for Offtopic<br/>(in progress)</p></a>
+                    </div>                
+                </div>
+            </div>
     </section>
+
+
 
     <section id="contact">
         <div class="container">
             <div class="section-name">Contact</div>
         </div>
         <div class="container">
-            <div style="font-size: 24px;">Send me a message!</div>
+            <div style="font-size: 32px; color: #FCB242;">Send me a message!</div>
         </div>
         <div class="container">
             <form>
                 <label for="e-mail">E-mail</label><br/>
                 <input type="text" id="e-mail" name="e-mail"><br/>
                 <label for="widomosc">Message</label><br/>
-                <textarea id="wiadomosc" name="wiadomosd"></textarea><br/>
-                <input class="button-cta" type="submit" value="Send">
+                <textarea id="wiadomosc" name="wiadomosc" rows="10" wrap="soft"></textarea><br/>
+                <input class="button-cta" type="submit" value="Send">               
             </form>            
         </div>
     </section>

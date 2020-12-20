@@ -19,7 +19,7 @@ h1{
     font-size: 48px;
     line-height: 72px;
 }
-ul li{
+header ul li{
     list-style-type: none;
     display: inline;
 }
@@ -93,7 +93,7 @@ ul li a{
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: .5s ease;
+    transition: 0.5s ease-in-out;
     background-color: var(--primary--);
     border-radius: 50%;
 }
@@ -114,16 +114,84 @@ ul li a{
 #skills img{
     background-color: var(--details--);
     padding: 8px;
-    margin-top: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
     border-radius: 10px;
+}
+.skill-category{
+    font-size: 40px;
+    color: var(--secondary--);
+}
+.skill{
+    justify-content: space-between;
+    width: 100%;
 }
 #portfolio{
     background-color: var(--secondary--);
 }
+.portfolio-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+}
+.portfolio-item img{
+    width: 300px;
+    border-radius: 10px;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    transition: filter 0.5s ease-in-out;
+}
+.overlay-portfolio{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.overlay-portfolio .overlay-portfolio-text{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: var(--details--);
+    top:50%; 
+    transform:translate(0%, -50%); 
+    text-align: center;
+    opacity: 0;
+    color: var(--primary--);
+    text-decoration: none;
+    transition: opacity 0.5s ease-in-out;
+}
+.overlay-portfolio:hover .overlay-portfolio-text{
+    opacity: 0.9;
+}
+.portfolio-item:hover img{
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
 #contact{
     background-color: var(--primary--);
 }
-#contact .button-cta{
+input[type=text]{
+    width: 300px;
+    height: 40px;
+    border: 2px solid var(--primary--);
+    border-radius: 10px;
+    transition: ease-in-out, border .35s ease-in-out;
+}
+input[type=text]:focus{
+    border: 2px solid var(--secondary--);
+}
+textarea{
+    width: 300px;
+    border: 2px solid var(--primary--);
+    border-radius: 10px;
+    resize: none;
+    transition: ease-in-out, border .35s ease-in-out;
+}
+textarea:focus{
+    border: 2px solid var(--secondary--);
+}
+.button-cta{
     width: 100px;
     height: 3em;
     background-color: var(--secondary--);
@@ -133,4 +201,8 @@ ul li a{
     font-weight: bold;
     border: none;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.button-cta:hover, .button-cta:active{
+    background-color: var(--details--);
+    color: var(--secondary--);
 }
